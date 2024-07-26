@@ -1,0 +1,204 @@
+@font-face {
+    font-family: cutiveMono;
+    src: url(./fonts/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: astloch;
+    src: url(./fonts/Astloch-Regular.ttf);
+}
+
+@font-face {
+    font-family: antonSC;
+    src: url(./fonts/AntonSC-Regular.ttf);
+}
+
+body {
+    background: linear-gradient(transparent, transparent, transparent, #271723, black), url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #271723;
+    color: white;
+    font-family: cutiveMono;
+    font-size: 1.7vw;
+}
+
+/* ----- HEADER START ----- */
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-family: antonSC;
+    font-size: 7vw;
+    margin: 10vw 0 0 65vw;
+}
+
+.headerSection {
+    position: absolute;
+    font-family: astloch;
+    font-size: 3vw;
+    width: 45vw;
+    top: 1vw;
+    left: 4vw;
+}
+
+/* ----- HEADER STOP ----- */
+
+
+/* ----- MAIN START ------ */
+
+h2, 
+h3 {
+    font-family: antonSC;
+}
+
+/* ---- BOX1 START ----- */
+
+.box1 {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #291724cb;
+    margin: 15vw -5vw 15vw 5vw;
+    box-shadow: 10px 10px 5px #291724cb;
+}
+
+.box1 h2 {
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.box1 p {
+    width: 25vw;
+    padding-right: 10vw;
+}
+
+.box1 img {
+    position: absolute;
+    height: 40vw;
+    right: 10vw;
+    box-shadow: 0 0 50px 50px #070406cb;
+}
+
+/* ----- BOX1 STOP ----- */
+
+
+/* ----- BOX2 START ----- */
+
+.box2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #070406cb;
+    margin: 15vw 5vw 15vw -5vw;
+    /* box-shadow: 10px 10px 5px #070406cb; */
+    background: radial-gradient(circle at bottom right, rgba(253, 253, 252, 0) 30%, #070406cb, #070406cb);
+}
+
+.box2 h2 {
+    padding-right: 5vw;
+    padding-left: 10vw;
+}
+
+.box2 p {
+    padding-right: 45vw;
+}
+
+/* ----- BOX2 STOP ----- */
+
+/* ----- BOX3 START ----- */
+
+.box3 {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #070406cb;
+    margin: 15vw 5vw 15vw -5vw;
+    box-shadow: 10px 10px 5px #070406cb;
+}
+
+.box3 h2 {
+    padding-right: 5vw;
+    padding-right: 10vw;
+    text-align: center;
+}
+
+.box3 p {
+    width: 25vw;
+    padding-right: 10vw;
+}
+
+.box3 img {
+    position: absolute;
+    height: 40vw;
+    left: 10vw;
+    box-shadow: 0 0 50px 50px #070406cb;
+}
+
+/* ----- BOX3 STOP -----*/
+
+/* ----- BOX4 START ----- */
+
+.box4 h2 {
+    text-align: center;
+}
+
+.box4 .books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.box4 div {
+    padding: 2vw;
+    margin: 2vw;
+    height: 55vw;
+}
+
+.box4 .call {
+    background-color: #070406cb;
+    width: 25vw;
+
+}
+
+.box4 .colour {
+    background-color: #070406cb;
+    width: 25vw;
+}
+
+.box4 .horror {
+    background-color: #070406cb;
+    width: 25vw;
+}
+
+.box4 .imgCall {
+    position: relative;
+    background-image: linear-gradient(transparent, black), url(images/cthulhu_fhtagn_no_more_by_samize_d59urqv-fullview.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48vw;
+    margin: 0;
+    padding: 0;
+    height: 30vw;
+    left: 25vw;
+    bottom: 5vw;
+    box-shadow: 0 0 50px 50px #070406cb;
+}
+
+/* ----- BOX4 STOP ----- */
+
+/* ----- MAIN STOP ----- */
+
+
+/* ----- FOOTER START ----- */
+footer {
+    color: black;
+}
+
+/* ----- FOOTER STOPS ----- */
