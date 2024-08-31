@@ -144,6 +144,12 @@ h3 {
 
 /* ----- BOX4 START ----- */
 
+.box4 {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .box4 h2 {
     text-align: center;
 }
@@ -178,16 +184,12 @@ h3 {
 }
 
 .box4 .imgCall {
-    position: relative;
+    align-self: center;
     background-image: linear-gradient(transparent, black), url(images/cthulhu_fhtagn_no_more_by_samize_d59urqv-fullview.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 48vw;
-    margin: 0;
-    padding: 0;
     height: 30vw;
-    left: 25vw;
-    bottom: 5vw;
     box-shadow: 0 0 50px 50px #070406cb;
 }
 
