@@ -23,6 +23,11 @@ body {
     font-size: 1.7vw;
 }
 
+.wrapper {
+    margin: 4rem auto;
+    width: 80%;
+}
+
 /* ----- HEADER START ----- */
 
 header {
@@ -156,8 +161,8 @@ h3 {
 
 .box4 .books {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
+    grow: 1;
     justify-content: space-between;
 }
 
