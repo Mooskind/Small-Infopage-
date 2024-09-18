@@ -1,0 +1,193 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----- VARIABLES ----- */
+
+$primaryColor: #070406cb;
+$secundaryColor:  #271723;
+
+%booksStyle {
+    background-color: $primaryColor;
+    width: 25vw;
+}
+
+@font-face {
+    font-family: cutiveMono;
+    src: url(./fonts/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: astloch;
+    src: url(./fonts/Astloch-Regular.ttf);
+}
+
+@font-face {
+    font-family: antonSC;
+    src: url(./fonts/AntonSC-Regular.ttf);
+}
+
+.wrapper {
+    background: linear-gradient(transparent, transparent, transparent, $secundaryColor, black), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: $secundaryColor;
+    color: white;
+    font-family: cutiveMono;
+    font-size: 1.7vw;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-family: antonSC;
+    font-size: 7vw;
+    margin: 10vw 0 0 65vw;
+}
+
+.headerSection {
+    position: absolute;
+    font-family: astloch;
+    font-size: 3vw;
+    width: 45vw;
+    top: 1vw;
+    left: 4vw;
+}
+
+h2, 
+h3 {
+    font-family: antonSC;
+}
+
+.box1 {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #291724cb;
+    margin: 15vw -5vw 15vw 5vw;
+    box-shadow: 10px 10px 5px #291724cb;
+    
+    h2 {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    
+    p {
+        width: 25vw;
+        padding-right: 10vw;
+    }
+    
+    img {
+        position: absolute;
+        height: 40vw;
+        right: 10vw;
+        box-shadow: 0 0 50px 50px $primaryColor;
+    }
+}
+
+.box2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #070406cb;
+    margin: 15vw 5vw 15vw -5vw;
+    background: radial-gradient(circle at bottom right, rgba(253, 253, 252, 0) 30%, $primaryColor, $primaryColor);
+    
+    h2 {
+        padding-right: 5vw;
+        padding-left: 10vw;
+    }
+    
+    p {
+        padding-right: 45vw;
+    }
+}
+
+.box3 {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #070406cb;
+    margin: 15vw 5vw 15vw -5vw;
+    box-shadow: 10px 10px 5px $primaryColor;
+    
+    h2 {
+        padding-right: 5vw;
+        padding-right: 10vw;
+        text-align: center;
+    }
+    
+    p {
+        width: 25vw;
+        padding-right: 10vw;
+    }
+    
+    img {
+        position: absolute;
+        height: 40vw;
+        left: 10vw;
+        box-shadow: 0 0 50px 50px $primaryColor;
+    }
+}   
+    
+.box4 {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .books {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    div {
+        padding: 2vw;
+        margin: 2vw;
+        height: 55vw;
+    }
+    
+    .call {
+       @extend %booksStyle; 
+    }
+    
+    .colour {
+        @extend %booksStyle; 
+    }
+    
+    .horror {
+        @extend %booksStyle; 
+    }
+    
+    .imgCall {
+        align-self: center;
+        background-image: linear-gradient(transparent, black), url(../images/cthulhu_fhtagn_no_more_by_samize_d59urqv-fullview.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 48vw;
+        height: 30vw;
+        box-shadow: 0 0 50px 50px $primaryColor;
+    }
+}
+    
+footer {
+    color: black;
+}
+
+/* ----- Media Quieries ----- */
+
+@media screen and (min-width) {
+
+}
